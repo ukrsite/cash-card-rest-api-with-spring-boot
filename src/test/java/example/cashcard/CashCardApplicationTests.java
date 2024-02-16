@@ -1,6 +1,5 @@
 package example.cashcard;
 
-import java.net.URI;
 import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.JsonPath;
 import org.junit.jupiter.api.Test;
@@ -9,6 +8,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+
+import java.net.URI;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -56,5 +57,4 @@ class CashCardApplicationTests {
 		assertThat(id).isNotNull();
 		assertThat(amount).isEqualTo(250.00);
 	}
-
 }
